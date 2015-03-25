@@ -1,0 +1,8 @@
+*.sublime*
+*.TODO
+.ftppass
+.DS_Store
+node_modules
+src/_design
+src
+!src/*.php

@@ -1,0 +1,32 @@
+{
+  "name": "aem",
+  "description": "site",
+  "version": "0.1.0",
+  "author": {
+    "name": "aalexeev239",
+    "email": "alexeev.andrey.a@gmail.com"
+  },
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-autoprefixer": "^2.2.0",
+    "grunt-combine-media-queries": "^1.0.19",
+    "grunt-contrib-clean": "^0.6.0",
+    "grunt-contrib-concat": "^0.5.0",
+    "grunt-contrib-copy": "^0.7.0",
+    "grunt-contrib-csslint": "^0.4.0",
+    "grunt-contrib-cssmin": "^0.12.1",
+    "grunt-contrib-imagemin": "^0.9.3",
+    "grunt-contrib-stylus": "^0.20.0",
+    "grunt-contrib-uglify": "^0.7.0",
+    "grunt-contrib-watch": "^0.6.1",
+    "grunt-ftp-deploy": "^0.1.10",
+    "grunt-grunticon": "^2.1.2",
+    "grunt-imageoptim": "^1.4.1",
+    "grunt-notify": "^0.4.1",
+    "grunt-replace": "^0.8.0",
+    "grunt-svgmin": "^2.0.0",
+    "load-grunt-tasks": "^3.1.0",
+    "nib": "^1.1.0",
+    "time-grunt": "^1.0.0"
+  }
+}
