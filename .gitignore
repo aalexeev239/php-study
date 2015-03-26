@@ -1,7 +1,7 @@
-*.sublime*
-*.TODO
-.ftppass
-.DS_Store
-node_modules
-src/*
-!src/*.php
+/*
+!/src
+/src/*
+!/src/*.php
+!/src/js
+/src/js/*
+!/src/js/main.js
