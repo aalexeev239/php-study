@@ -39,25 +39,33 @@
             <h2>Задание <?=$task?>:</h2>
             <p class="lead">
               <?php
+
+                $answer = '';
+
                 switch ($task) {
                   case 1:
                     echo "Дана строка в которой записаны слова через пробел. Необходимо посчитать количество слов.";
+                    $answer = "Количество слов: ".wordCount($inputString);
                     break;
 
                   case 2:
                     echo "Дана строка в которой записаны слова через пробел. Необходимо посчитать количество слов с четным количеством символов.";
+                    $answer = "Количество четных слов: ".wordEvenCount($inputString);
                     break;
 
                   case 3:
                     echo "Напишите функцию, которая каждый второй символ строки приводит к верхнему регистру.";
+                    $answer = upperEverySecondChar($inputString);
                     break;
 
                   case 4:
                     echo "Дана строка в которой записаны слова через пробел. Необходимо перемешать в каждом слове все символы в случайном порядке кроме первого и последнего.";
+                    $answer = hellify($inputString);
                     break;
 
                   case 5:
                     echo "Дана строка в которой записан полный путь к файлу. Необходимо найти имя файла без расширения.";
+                    $answer = myGetFileName($inputString);
                     break;
 
                   default:
@@ -66,42 +74,15 @@
                 }
               ?>
             </p>
-            <?php
-
-              $answer = '';
-
-              switch ($task) {
-                case 1:
-                  $answer = "Количество слов: ".wordCount($inputString);
-                  break;
-
-                case 2:
-                  $answer = "Количество четных слов: ".wordEvenCount($inputString);
-                  break;
-
-                case 3:
-                  $answer = upperEverySecondChar($inputString);
-                  break;
-
-                case 4:
-                  $answer = hellify($inputString);
-                  break;
-
-                case 5:
-                  $answer = myGetFileName($inputString);
-                  break;
-
-                default:
-                  echo "Поэтому ответа тоже нет..";
-                  break;
-              }
-
-              if (!empty($answer)) {
-                echo htmlspecialchars($answer);
-              } else {
-                echo "Похоже, у меня нет ответа. Возможно, в другой раз...";
-              }
-             ?>
+            <P>
+              <?php
+                if (!empty($answer)) {
+                  echo htmlspecialchars($answer);
+                } else {
+                  echo "Похоже, у меня нет ответа. Возможно, в другой раз...";
+                }
+               ?>
+            </P>
           </div>
         </div>
       </div>
