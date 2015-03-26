@@ -1,6 +1,6 @@
 ##Дзшки по php
 
-Посмотреть: [http://aalexeev.ru/work/aem-php/index.php]
+Посмотреть: http://aalexeev.ru/work/aem-php/index.php
 
 
 
