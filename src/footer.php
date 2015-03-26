@@ -8,7 +8,7 @@
               Задания
             </span>
             <ul>
-              <li><a href="/index.php?page=strings">Задания на строки</a></li>
+              <li><a href="<?=$baseUrl?>/index.php?page=strings">Задания на строки</a></li>
             </ul>
           </div>
           <div class="ftr-top__sect ftr-top__sect--sect2">

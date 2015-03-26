@@ -58,48 +58,6 @@ function arrayToString($arr) {
 $text = "  1234 12345678 asdf alsdjkqkj2198 j \n фыдвалофывайцук <strong> фывафыв</strong> asdf";
 
 
-function str_split_unicode($str, $l = 0) {
-    if ($l > 0) {
-        $ret = array();
-        $len = mb_strlen($str, "UTF-8");
-        for ($i = 0; $i < $len; $i += $l) {
-            $ret[] = mb_substr($str, $i, $l, "UTF-8");
-        }
-        return $ret;
-    }
-    return preg_split("//u", $str, -1, PREG_SPLIT_NO_EMPTY);
-}
-
-
-
-function hellify($str) {
-  // var_dump($str);
-
-  $words = explode(" ", $str);
-
-  $response = array();
-
-  foreach ($words as $key => $word) {
-
-    if (mb_strlen($word) > 3) {
-
-      $chars = str_split_unicode($word);
-
-      $charsFirst = array_shift($chars);
-      $charsLast = array_pop($chars);
-
-      shuffle($chars);
-
-      $response[$key] = implode("", array_merge((array)$charsFirst, $chars, (array)$charsLast));
-
-    } else {
-      $response[$key] = $word;
-    }
-  }
-
-  return implode(" ",$response);
-}
-
 // echo hellify($text);
 
 

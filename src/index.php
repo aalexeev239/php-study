@@ -1,9 +1,15 @@
 <?php
 
+mb_internal_encoding("UTF-8");
+
+$baseUrl = '/work/aem-php';
+// $baseUrl = '';
+
 $pageAction = isset($_GET['page']) ? $_GET['page'] : '';
 $pageType = isset($_GET['type']) ? $_GET['type'] : '';
 $pageFileName = '';
 $pageTitle = '';
+
 
 switch ($pageAction) {
   case 'strings':
@@ -44,8 +50,6 @@ require_once 'header.php';
  ?>
 
 <?php
-
-
 
 require_once $pageFileName;
 

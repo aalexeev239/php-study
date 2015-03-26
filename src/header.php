@@ -35,10 +35,10 @@
       <div class="fixed-nav__nav">
         <nav class="nav nav--fixed">
           <ul>
-            <li <?php if ($pageAction == 'about') { echo 'class="active"'; } ?>><a href="/index.php?page=strings"><span class="nav__span"><span data-hover="Строки">Строки</span></span></a></li>
-            <li <?php if ($pageAction == 'activities') { echo 'class="active"'; } ?>><a href="/index.php?page=activities"><span class="nav__span"><span data-hover="Деятельность">Деятельность</span></span></a></li>
-            <li <?php if ($pageAction == '  projects') { echo 'class="active"'; } ?>><a href="/index.php?page=projects"><span class="nav__span"><span data-hover="Проекты">Проекты</span></span></a></li>
-            <li <?php if ($pageAction == 'contacts') { echo 'class="active"'; } ?>><a href="/index.php?page=contacts"><span class="nav__span"><span data-hover="Контакты">Контакты</span></span></a></li>
+            <li <?php if ($pageAction == 'about') { echo 'class="active"'; } ?>><a href="<?= $baseUrl?>/index.php?page=strings"><span class="nav__span"><span data-hover="Строки">Строки</span></span></a></li>
+            <li <?php if ($pageAction == 'activities') { echo 'class="active"'; } ?>><a href="<?= $baseUrl?>/index.php?page=activities"><span class="nav__span"><span data-hover="Деятельность">Деятельность</span></span></a></li>
+            <li <?php if ($pageAction == '  projects') { echo 'class="active"'; } ?>><a href="<?= $baseUrl?>/index.php?page=projects"><span class="nav__span"><span data-hover="Проекты">Проекты</span></span></a></li>
+            <li <?php if ($pageAction == 'contacts') { echo 'class="active"'; } ?>><a href="<?= $baseUrl?>/index.php?page=contacts"><span class="nav__span"><span data-hover="Контакты">Контакты</span></span></a></li>
           </ul>
         </nav>
       </div>
@@ -57,10 +57,10 @@
             <div class="col8">
               <nav class="nav">
                 <ul>
-                  <li <?php if ($pageAction == 'about') { echo 'class="active"'; } ?>><a href="/index.php?page=strings"><span class="nav__span"><span data-hover="Строки">Строки</span></span></a></li>
-                  <li <?php if ($pageAction == 'activities') { echo 'class="active"'; } ?>><a href="/index.php?page=activities"><span class="nav__span"><span data-hover="Деятельность">Деятельность</span></span></a></li>
-                  <li <?php if ($pageAction == 'projects') { echo 'class="active"'; } ?>><a href="/index.php?page=projects"><span class="nav__span"><span data-hover="Проекты">Проекты</span></span></a></li>
-                  <li <?php if ($pageAction == 'contacts') { echo 'class="active"'; } ?>><a href="/index.php?page=contacts"><span class="nav__span"><span data-hover="Контакты">Контакты</span></span></a></li>
+                  <li <?php if ($pageAction == 'about') { echo 'class="active"'; } ?>><a href="<?= $baseUrl?>/index.php?page=strings"><span class="nav__span"><span data-hover="Строки">Строки</span></span></a></li>
+                  <li <?php if ($pageAction == 'activities') { echo 'class="active"'; } ?>><a href="<?= $baseUrl?>/index.php?page=activities"><span class="nav__span"><span data-hover="Деятельность">Деятельность</span></span></a></li>
+                  <li <?php if ($pageAction == 'projects') { echo 'class="active"'; } ?>><a href="<?= $baseUrl?>/index.php?page=projects"><span class="nav__span"><span data-hover="Проекты">Проекты</span></span></a></li>
+                  <li <?php if ($pageAction == 'contacts') { echo 'class="active"'; } ?>><a href="<?= $baseUrl?>/index.php?page=contacts"><span class="nav__span"><span data-hover="Контакты">Контакты</span></span></a></li>
                 </ul>
               </nav>
             </div>
@@ -85,25 +85,25 @@
                 if ($pageType == 'partners') {
                   $switchTypeOne   = '';
                   $switchTypeTwo  = 'checked';
-                  $contentTypeOne  = '<a href="/index.php?page=contacts">Филиалы</a>';
+                  $contentTypeOne  = '<a href="'.$baseUrl.'/index.php?page=contacts">Филиалы</a>';
                   $contentTypeTwo = 'Партнеры';
                 } else {
                   $switchTypeOne   = 'checked';
                   $switchTypeTwo  = '';
                   $contentTypeOne  = 'Филиалы';
-                  $contentTypeTwo = '<a href="/index.php?page=contacts&type=partners">Партнеры</a>';
+                  $contentTypeTwo = '<a href="'.$baseUrl.'/index.php?page=contacts&type=partners">Партнеры</a>';
                 }
               } else {
                 if ($pageType == 'clients') {
                   $switchTypeOne   = '';
                   $switchTypeTwo  = 'checked';
-                  $contentTypeOne  = '<a href="/index.php?page=projects">Проекты</a>';
+                  $contentTypeOne  = '<a href="'.$baseUrl.'/index.php?page=projects">Проекты</a>';
                   $contentTypeTwo = 'Клиенты';
                 } else {
                   $switchTypeOne   = 'checked';
                   $switchTypeTwo  = '';
                   $contentTypeOne  = 'Проекты';
-                  $contentTypeTwo = '<a href="/index.php?page=projects&type=clients">Клиенты</a>';
+                  $contentTypeTwo = '<a href="'.$baseUrl.'/index.php?page=projects&type=clients">Клиенты</a>';
                 }
               }
              ?>
